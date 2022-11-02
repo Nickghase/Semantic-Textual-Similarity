@@ -142,4 +142,6 @@ def get_similarity():
 
 if st.button('Show Similarity'):
     data_cvr = get_similarity()
-    st.dataframe(data_cvr)
+    st.text(data_cvr.iloc[0,0])
+    st.text(data_cvr.iloc[0,1])
+    st.text(data_cvr.iloc[0,2])
