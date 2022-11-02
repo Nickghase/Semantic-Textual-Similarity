@@ -20,7 +20,6 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.pipeline import Pipeline
 import spacy
-import spacy_streamlit
 from collections import Counter
 import pickle
 import streamlit as st
