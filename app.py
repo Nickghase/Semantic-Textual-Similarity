@@ -38,11 +38,11 @@ text2 = pickle.load(open('text2.pkl','rb'))
 
 selected_text1 = st.selectbox(
     "select a text from the dropdown",
-    text1
+    text1)
 
 selected_text2 = st.selectbox(
     "select a text from the dropdown",
-    text2
+    text2)
 
 copydata = pd.DataFrame([[selected_text1,selected_text2]],columns = ["text1","text2"])
 
