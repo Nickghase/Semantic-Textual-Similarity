@@ -49,8 +49,8 @@ copydata = pd.DataFrame([[selected_text1,selected_text2]],columns = ["text1","te
 
 def remove_punc(copydata):
   pattern = r'[' + string.punctuation + ']'
-  copydata['text1']=data['text1'].map(lambda m:re.sub(pattern," ",m))
-  copydata['text2']=data['text2'].map(lambda m:re.sub(pattern," ",m))
+  copydata['text1']=copydata['text1'].map(lambda m:re.sub(pattern," ",m))
+  copydata['text2']=copydata['text2'].map(lambda m:re.sub(pattern," ",m))
   return copydata
 
 
