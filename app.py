@@ -6,9 +6,7 @@ import string
 import nltk 
 from nltk.stem import WordNetLemmatizer 
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.tokenize.treebank import TreebankWordDetokenizer
-from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.pipeline import Pipeline
 import spacy
