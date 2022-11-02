@@ -1,7 +1,22 @@
 Semantic Textual Similarity :
 Part A
 1) load the data 
-2) preprocess the textual data
+2) preprocess the textual data:
+
+1.   Remove Punctuation
+2.   Lower Case
+3.   Tokenize
+4.   Remove Stop Words
+5.   Remove Digits
+6.   Lemmatize
+7.   Remove empty tokens
+8.   Remove single meaningless letters
+9.   Detokenize
+10.  Remove Spaces
+11.  Count Vectorizer + Cosine Similarity
+12.  Tf-Idf Vectorizer + Cosine Similarity
+
+
 3) Use CountVectorizer or TfIdf to convert text data into vectors 
 4) find out the cosine similarity between texts 
 5) similarity lies between 0 to 1. where 0 represents two sentences are not similar and 1 represents highly similar
