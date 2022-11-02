@@ -1,2 +1,2 @@
 streamlit
-spacy_streamlit
+spacy-streamlit
