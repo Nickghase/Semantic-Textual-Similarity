@@ -140,7 +140,5 @@ def get_similarity():
 
 
 if st.button('Show Similarity'):
-    sim = get_similarity()
-    col1 = st.columns(1)
-    with col1:
-        st.dataframe(sim)
+    data_cvr = get_similarity()
+    st.dataframe(data_cvr)
