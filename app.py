@@ -129,10 +129,11 @@ def count_vcr():
 
 copydata=copydata.pipe(remove_punc).pipe(token).pipe(remove_SW).pipe(remove_digits).pipe(lemmatize).pipe(remove_empty_tokens).pipe(remove_single_letters)
 
+  similarity=[]
 def get_similarity():
   bow_converter = CountVectorizer()
   copydata.pipe(detoken).pipe(remove_space)
-  similarity=[]
+
   similarity=count_vcr()
   data_cvr=copydata.copy()
   data_cvr['Similarity']=similarity
